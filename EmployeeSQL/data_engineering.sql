@@ -77,12 +77,11 @@ REFERENCES "departments" ("dept_no");
 ALTER TABLE "salaries" ADD CONSTRAINT "fk_salaries_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employees" ("emp_no");
 
-SELECT * FROM departments
 
 -- Tables:
-DROP TABLE departments;
-DROP TABLE dept_emp;
-DROP TABLE dept_manager;
-DROP TABLE employees;
-DROP TABLE salaries;
-DROP TABLE titles;
+-- DROP TABLE departments;
+-- DROP TABLE dept_emp;
+-- DROP TABLE dept_manager;
+-- DROP TABLE employees;
+-- DROP TABLE salaries;
+-- DROP TABLE titles;
