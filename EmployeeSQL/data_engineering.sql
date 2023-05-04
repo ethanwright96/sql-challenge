@@ -6,6 +6,8 @@
 -- DROP DATABASE IF EXISTS "employee_DB";
 -- Tables:
 
+-- Note: The order in which these tables are created matters. titles, employees, and departments created first because of independence.
+
 CREATE TABLE "titles" (
     "title_id" VARCHAR(10)   NOT NULL,
     "title" VARCHAR(30)   NOT NULL,
@@ -18,7 +20,7 @@ CREATE TABLE "employees" (
     "emp_no" INT   NOT NULL,
     "emp_title_id" VARCHAR   NOT NULL,
     "birth_date" DATE   NOT NULL,
-    "firt_name" VARCHAR   NOT NULL,
+    "first_name" VARCHAR   NOT NULL,
     "last_name" VARCHAR   NOT NULL,
     "sex" VARCHAR   NOT NULL,
     "hire_date" DATE   NOT NULL,
